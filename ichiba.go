@@ -103,59 +103,59 @@ type IchibaItemSearchParam struct {
 
 // IchibaItemResult is api response result for ichiba item result
 type IchibaItemResult struct {
-	Count     int `json:"count"`
-	Page      int `json:"page"`
-	First     int `json:"first"`
-	Last      int `json:"last"`
-	Hits      int `json:"hits"`
-	Carrier   int `json:"carrier"`
-	PageCount int `json:"pageCount"`
-	Items     []struct {
-		Item Item `json:"Item"`
-	} `json:"Items"`
+	Count            int           `json:"count"`
+	Page             int           `json:"page"`
+	First            int           `json:"first"`
+	Last             int           `json:"last"`
+	Hits             int           `json:"hits"`
+	Carrier          int           `json:"carrier"`
+	PageCount        int           `json:"pageCount"`
+	Items            []Item        `json:"Items"`
 	GenreInformation []interface{} `json:"GenreInformation"`
 	TagInformation   []interface{} `json:"TagInformation"`
 }
 
 // Item is inner struct in ichiba item result
 type Item struct {
-	ItemName       string `json:"itemName"`
-	Catchcopy      string `json:"catchcopy"`
-	ItemCode       string `json:"itemCode"`
-	ItemPrice      int    `json:"itemPrice"`
-	ItemCaption    string `json:"itemCaption"`
-	ItemURL        string `json:"itemUrl"`
-	ShopURL        string `json:"shopUrl"`
-	SmallImageUrls []struct {
-		ImageURL string `json:"imageUrl"`
-	} `json:"smallImageUrls"`
-	MediumImageUrls []struct {
-		ImageURL string `json:"imageUrl"`
-	} `json:"mediumImageUrls"`
-	AffiliateURL       string  `json:"affiliateUrl"`
-	ShopAffiliateURL   string  `json:"shopAffiliateUrl"`
-	ImageFlag          int     `json:"imageFlag"`
-	Availability       int     `json:"availability"`
-	TaxFlag            int     `json:"taxFlag"`
-	PostageFlag        int     `json:"postageFlag"`
-	CreditCardFlag     int     `json:"creditCardFlag"`
-	ShopOfTheYearFlag  int     `json:"shopOfTheYearFlag"`
-	ShipOverseasFlag   int     `json:"shipOverseasFlag"`
-	ShipOverseasArea   string  `json:"shipOverseasArea"`
-	AsurakuFlag        int     `json:"asurakuFlag"`
-	AsurakuClosingTime string  `json:"asurakuClosingTime"`
-	AsurakuArea        string  `json:"asurakuArea"`
-	AffiliateRate      int     `json:"affiliateRate"`
-	StartTime          string  `json:"startTime"`
-	EndTime            string  `json:"endTime"`
-	ReviewCount        int     `json:"reviewCount"`
-	ReviewAverage      float64 `json:"reviewAverage"`
-	PointRate          int     `json:"pointRate"`
-	PointRateStartTime string  `json:"pointRateStartTime"`
-	PointRateEndTime   string  `json:"pointRateEndTime"`
-	GiftFlag           int     `json:"giftFlag"`
-	ShopName           string  `json:"shopName"`
-	ShopCode           string  `json:"shopCode"`
-	GenreID            string  `json:"genreId"`
-	TagIds             []int   `json:"tagIds"`
+	Item struct {
+		ItemName       string `json:"itemName"`
+		Catchcopy      string `json:"catchcopy"`
+		ItemCode       string `json:"itemCode"`
+		ItemPrice      int    `json:"itemPrice"`
+		ItemCaption    string `json:"itemCaption"`
+		ItemURL        string `json:"itemUrl"`
+		ShopURL        string `json:"shopUrl"`
+		SmallImageUrls []struct {
+			ImageURL string `json:"imageUrl"`
+		} `json:"smallImageUrls"`
+		MediumImageUrls []struct {
+			ImageURL string `json:"imageUrl"`
+		} `json:"mediumImageUrls"`
+		AffiliateURL       string  `json:"affiliateUrl"`
+		ShopAffiliateURL   string  `json:"shopAffiliateUrl"`
+		ImageFlag          int     `json:"imageFlag"`
+		Availability       int     `json:"availability"`
+		TaxFlag            int     `json:"taxFlag"`
+		PostageFlag        int     `json:"postageFlag"`
+		CreditCardFlag     int     `json:"creditCardFlag"`
+		ShopOfTheYearFlag  int     `json:"shopOfTheYearFlag"`
+		ShipOverseasFlag   int     `json:"shipOverseasFlag"`
+		ShipOverseasArea   string  `json:"shipOverseasArea"`
+		AsurakuFlag        int     `json:"asurakuFlag"`
+		AsurakuClosingTime string  `json:"asurakuClosingTime"`
+		AsurakuArea        string  `json:"asurakuArea"`
+		AffiliateRate      int     `json:"affiliateRate"`
+		StartTime          string  `json:"startTime"`
+		EndTime            string  `json:"endTime"`
+		ReviewCount        int     `json:"reviewCount"`
+		ReviewAverage      float64 `json:"reviewAverage"`
+		PointRate          int     `json:"pointRate"`
+		PointRateStartTime string  `json:"pointRateStartTime"`
+		PointRateEndTime   string  `json:"pointRateEndTime"`
+		GiftFlag           int     `json:"giftFlag"`
+		ShopName           string  `json:"shopName"`
+		ShopCode           string  `json:"shopCode"`
+		GenreID            string  `json:"genreId"`
+		TagIds             []int   `json:"tagIds"`
+	} `json:"Item"`
 }
