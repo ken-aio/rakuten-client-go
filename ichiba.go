@@ -48,7 +48,6 @@ func (c *Client) IchibaItemSearch(param *IchibaItemSearchParam) (*IchibaItemResu
 	} else {
 		err = json.NewDecoder(resp.Body).Decode(&data)
 	}
-	fmt.Printf("err = %+v\n", err)
 	if err != nil {
 		return nil, err
 	}
