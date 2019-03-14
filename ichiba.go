@@ -144,7 +144,7 @@ type Item struct {
 		AsurakuFlag        int     `json:"asurakuFlag"`
 		AsurakuClosingTime string  `json:"asurakuClosingTime"`
 		AsurakuArea        string  `json:"asurakuArea"`
-		AffiliateRate      int     `json:"affiliateRate"`
+		AffiliateRate      float64 `json:"affiliateRate"`
 		StartTime          string  `json:"startTime"`
 		EndTime            string  `json:"endTime"`
 		ReviewCount        int     `json:"reviewCount"`
