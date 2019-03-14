@@ -65,7 +65,7 @@ type IchibaItemSearchParam struct {
 	Elements      string `rws:"elements"`
 	FormatVersion string `rws:"formatVersion"`
 
-	NGKeyword               string `rws:"ngKeyword"`
+	NGKeyword               string `rws:"NGKeyword"`
 	AppointDeliveryDateFlag string `rws:"appointDeliveryDateFlag"`
 	AsurakuArea             string `rws:"asurakuArea"`
 	AsurakuFlag             string `rws:"asurakuFlag"`
